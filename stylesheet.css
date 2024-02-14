@@ -1,0 +1,370 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+}
+
+@font-face {
+  font-family: "TT Lakes Bold";
+  src: url("TTLakes/TTLakes-Bold.eot");
+  src: local("TT Lakes Bold"), local("TTLakes-Bold"),
+    url("TTLakes/TTLakes-Bold.eot") format("embedded-opentype"),
+    url("TTLakes/TTLakes-Bold.woff") format("woff"),
+    url("TTLakes/TTLakes-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TT Lakes Regular";
+  src: url("TTLakes/TTLakes-Regular.eot");
+  src: local("TT Lakes Regular"), local("TTLakes-Regular"),
+    url("TTLakes/TTLakes-Regular.eot") format("embedded-opentype"),
+    url("TTLakes/TTLakes-Regular.woff") format("woff"),
+    url("TTLakes/TTLakes-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TT Lakes Medium";
+  src: url("TTLakes/TTLakes-Medium.eot");
+  src: local("TT Lakes Medium"), local("TTLakes-Medium"),
+    url("TTLakes/TTLakes-Medium.eot") format("embedded-opentype"),
+    url("TTLakes/TTLakes-Medium.woff") format("woff"),
+    url("TTLakes/TTLakes-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+/*_____________________________________хэдер___________________________*/
+.header {
+  display: flex;
+  width: 100%;
+  height: 88px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  background-size: cover;
+}
+.left-header {
+  display: flex;
+  background-color: white;
+  align-items: center;
+}
+.right-header {
+  display: flex;
+  background-color: white;
+}
+
+.header::before {
+  content: "";
+  background: rgb(234, 234, 234);
+  top: 28px;
+  bottom: 28px;
+  width: 2px;
+  height: 32px;
+  display: block;
+  position: absolute;
+  border-radius: 15%;
+}
+
+.header::after {
+  content: "";
+  background: #d9fff5;
+  left: 0;
+  right: 0;
+  top: 87px;
+  bottom: 0px;
+  width: 100%;
+  height: 1px;
+  display: block;
+  position: absolute;
+}
+
+.button {
+  border-style: none;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+}
+.burger,
+.logo,
+.call,
+.chat,
+.profile,
+.repair,
+.checkstatus {
+  background-color: white;
+}
+
+.burger__button {
+  margin-left: 3vw;
+}
+.logo {
+  margin-left: 3vw;
+}
+.call__button {
+  display: none;
+  margin-right: 2vw;
+}
+.chat__button {
+  display: none;
+  margin-right: 2vw;
+}
+.profile__button {
+  display: none;
+  margin-right: 5vw;
+}
+.repair__button {
+  margin-right: 2vw;
+  position: relative;
+}
+.checkstatus__button {
+  margin-right: 3vw;
+}
+/*_________________________________ main header__________________________ */
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  flex-wrap: wrap;
+}
+.main-header {
+  width: 100%;
+  display: flex;
+  /* flex-direction: row; */
+  align-items: center;
+}
+
+.main-header__h1 {
+  color: rgb(27, 28, 33);
+  font-family: "TT Lakes Bold";
+  font-size: 2em;
+  font-weight: bold;
+  font-style: normal;
+  letter-spacing: -0.6px;
+  margin-top: 5vw;
+  margin-left: 5vw;
+  width: 100%;
+}
+.main-header__h1::before {
+  content: url("img/highlight.svg");
+  position: absolute;
+  left: 0;
+}
+
+/*_____________________________________меню___________________________*/
+.nav {
+  padding: 1vw;
+  position: relative;
+}
+.slide-menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  min-height: 40px;
+  position: relative;
+  width: 100%;
+}
+
+.slide-menu__button {
+  list-style: none;
+  background-color: #f8f8f8;
+  padding: 0.7rem;
+}
+.slide-menu__button > a {
+  padding: 5px;
+  color: rgb(126, 126, 130);
+  font-family: "TT Lakes Medium";
+  font-weight: 500;
+  font-size: 1rem;
+  text-decoration: none;
+  letter-spacing: -0.2px;
+}
+
+.slide-menu__button--active {
+  border-style: solid;
+  border-color: #b8ffec;
+  background-color: white;
+  border-width: 2px;
+  border-radius: 6px;
+}
+.slide-menu__button--active > a {
+  background-color: white;
+}
+/* ________________________гребанный градиент на меню________________*/
+.nav::before {
+  content: "";
+  background: linear-gradient(
+    270deg,
+    rgb(240, 238, 238) 20%,
+    rgba(248, 248, 248, 0) 100%
+  );
+  width: 24px;
+  height: 40px;
+  right: 0;
+  top: 15px;
+  position: absolute;
+  z-index: 1;
+}
+/*_____________________________________текстик___________________________*/
+.content {
+  display: flex;
+  width: 100%;
+}
+.content__text {
+  color: rgb(27, 28, 33);
+  font-family: "TT Lakes Rgular";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  margin-left: 1em;
+}
+.content-text {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.content-text__text {
+  font-family: "TT Lakes Regular";
+  max-width: 100%;
+  padding: 0 3.2vw 1.7vw 5vw;
+  font-size: 0.88rem;
+}
+/*---------------------прекрасные две кнопки на большом экране-----------*/
+.main-header__label {
+  min-width: 140px;
+  font-family: "TT Lakes Medium";
+  color: #1b1c21;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: default;
+  align-self: flex-end;
+  position: relative;
+  padding-bottom: 12px;
+}
+.repair__button--computer {
+  background-image: url("img\ic_repair.svg");
+  margin-right: 2vw;
+  align-self: flex-end;
+}
+.checkstatus__button--computer {
+  background-image: url("img\ic_checkstatus.svg");
+  margin-right: 2vw;
+  align-self: flex-end;
+}
+
+/* _________________гребанная галочка и читать далее_________________*/
+.expand__button::before {
+  content: url("img/ic_expand.svg");
+  position: absolute;
+  left: 5vw;
+  top: -2px;
+}
+.expand__button {
+  position: relative;
+  font-family: "TT Lakes Medium";
+  font-weight: 500;
+  padding: 0 0 5vw 8vw;
+  font-size: 1rem;
+  background-color: #f8f8f8;
+  border-style: none;
+}
+
+/*________________________адаптивная верстка на мобилку______________________*/
+@media (min-width: 320px) and (max-width: 767px) {
+  .content-text__text--pad {
+    display: none;
+  }
+
+  .content__text--computer {
+    display: none;
+  }
+  label {
+    display: none;
+  }
+  .content-image__image {
+    width: 100%;
+  }
+  .header::before {
+    left: 59vw;
+  }
+  .repair__button--computer,
+  .checkstatus__button--computer {
+    display: none;
+  }
+  .slide-menu {
+    overflow: hidden;
+  }
+  .nav {
+    width: calc(100% - 1vw);
+    padding: 2vw 5vw;
+  }
+  .content {
+    flex-direction: column;
+  }
+  .expand__button {
+    padding-left: 15vw;
+  }
+}
+/*-----------------------------верстка на планшет-----------------*/
+@media (min-width: 767px) and (max-width: 1200px) {
+  .header::before {
+    left: calc(40px + 6vw);
+  }
+  .repair__button::before {
+    content: "";
+    background: #eaeaea;
+    right: 6.5vw;
+    top: 5px;
+    width: 2px;
+    height: 32px;
+    position: absolute;
+    border-radius: 15%;
+  }
+  .call__button,
+  .chat__button,
+  .profile__button {
+    display: block;
+  }
+  label {
+    display: none;
+  }
+  .repair__button--computer,
+  .checkstatus__button--computer {
+    display: none;
+  }
+  .nav {
+    width: calc(100% - 1vw);
+    padding: 2vw 5vw;
+  }
+  .slide-menu {
+    flex-wrap: nowrap;
+    overflow: hidden;
+  }
+  .content-image__image {
+    max-width: 532px;
+    margin-right: 5vw;
+    border-radius: 3%;
+  }
+}
+
+/*-----------------------------верстка на компуктер-----------------*/
+@media (min-width: 1199px) {
+  .header {
+    display: none;
+  }
+  .content-image__image {
+    max-width: 532px;
+    margin-right: 5vw;
+    border-radius: 3%;
+  }
+  .nav {
+    width: 90%;
+    padding: 2vw 5vw;
+  }
+}
