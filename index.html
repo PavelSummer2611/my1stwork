@@ -7,14 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
-    <!------------------------хэдер------------------------>
     <header class="header">
       <div class="left-header">
-        <!---------------------левая часть--------------->
         <div class="burger">
-          <button class="burger__button button">
-            <img class="burger" src="img\ic_burger.svg" alt="бургер" />
-          </button>
+          <button class="burger__button button"></button>
         </div>
         <div class="logo">
           <button class="logo__button button">
@@ -23,62 +19,44 @@
         </div>
       </div>
       <div class="right-header">
-        <!-----------------------правая часть ----------------->
         <div class="call">
-          <button class="call__button button">
-            <img class="call" src="img\ic_call.svg" alt="звонок" />
-          </button>
+          <button class="call__button button"></button>
         </div>
         <div class="chat">
-          <button class="chat__button button">
-            <img class="chat" src="img\ic_chat.svg" alt="чат" />
-          </button>
+          <button class="chat__button button"></button>
         </div>
         <div class="profile">
-          <button class="profile__button button">
-            <img class="profile" src="img\ic_profile.svg" alt="профиль" />
-          </button>
+          <button class="profile__button button"></button>
         </div>
 
         <div class="repair">
-          <button class="repair__button button">
-            <img class="repair" src="img\ic_repair.svg" alt="ремонт" />
-          </button>
+          <button class="repair__button button"></button>
         </div>
         <div class="checkstatus">
-          <button class="checkstatus__button button">
-            <img
-              class="checkstatus"
-              src="img\ic_checkstatus.svg"
-              alt="чекстатус"
-            />
-          </button>
+          <button class="checkstatus__button button"></button>
         </div>
       </div>
     </header>
-
-    <!---------------------------main--------------------->
-    <main class="main">
+    <div class="main">
       <div class="main-header">
         <h1 class="main-header__h1">Услуги и сервисы</h1>
 
-        <label class="main-header__label" for="#repair__button--computer"
+        <label class="main-header__label" for="#main-header__repair-button"
           >Оставить заявку</label
         >
-        <div id="repair__button--computer" class="repair__button--computer">
+        <div id="main-header__repair-button" class="main-header__repair-button">
           <img src="img\ic_repair.svg" alt="ремонт" />
         </div>
-        <label class="main-header__label" for="#checkstatus__button--computer"
+        <label class="main-header__label" for="#main-header__checkstatus-button"
           >Оставить заявку</label
         >
         <div
-          id="checkstatus__button--computer"
-          class="checkstatus__button--computer"
+          id="main-header__checkstatus-button"
+          class="main-header__checkstatus-button"
         >
           <img src="img\ic_repair.svg" alt="ремонт" />
         </div>
       </div>
-      <!------------------------меню------------------------>
       <nav class="nav">
         <ul class="slide-menu">
           <li class="slide-menu__button slide-menu__button--active">
@@ -99,7 +77,6 @@
           <li class="slide-menu__button"><a href="#">Отзывы</a></li>
         </ul>
       </nav>
-      <!------------------------контент------------------------>
       <div class="content">
         <div class="content-text">
           <p class="content-text__text">
@@ -122,7 +99,6 @@
             <button class="expand__button">Читать далее</button>
           </div>
         </div>
-
         <div class="content-image">
           <img
             class="content-image__image"
@@ -131,6 +107,6 @@
           />
         </div>
       </div>
-    </main>
+    </div>
   </body>
 </html>
