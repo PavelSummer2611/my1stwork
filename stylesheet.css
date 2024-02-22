@@ -155,7 +155,7 @@ label {
 }
 .nav {
   position: relative;
-  width: calc(100% - 10vw);
+  width: 100%;
   padding: 2vw 3vw;
   overflow: hidden;
 }
@@ -195,20 +195,6 @@ label {
 }
 .slide-menu__button--active > a {
   background-color: white;
-}
-.nav::before {
-  content: "";
-  background: linear-gradient(
-    270deg,
-    rgb(240, 238, 238) 20%,
-    rgba(248, 248, 248, 0) 100%
-  );
-  width: 24px;
-  height: 40px;
-  right: 0;
-  top: 15px;
-  position: absolute;
-  z-index: 1;
 }
 .content {
   display: flex;
@@ -311,12 +297,16 @@ label {
     display: none;
   }
   .nav {
-    width: calc(100% - 10vw);
+    width: 100%;
     padding: 2vw 3vw;
+    overflow: hidden;
+  }
+  .scroll-wrapper{
+    overflow-x: auto;
   }
   .slide-menu {
     flex-wrap: nowrap;
-    overflow: hidden;
+   
   }
   .content {
     flex-direction: row;
