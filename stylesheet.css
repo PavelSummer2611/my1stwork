@@ -166,7 +166,7 @@ label {
   min-height: 40px;
   position: relative;
   width: 100%;
-  overflow: hidden;
+  overflow-x: scroll hidden;
 }
 .slide-menu__button {
   list-style: none;
