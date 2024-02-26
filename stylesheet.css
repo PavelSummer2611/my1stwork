@@ -160,7 +160,7 @@ label {
   overflow: hidden;
 }
 .scroll-wrapper {
-  overflow:auto;
+  overflow:hidden;
 }
 .slide-menu {
   display: flex;
