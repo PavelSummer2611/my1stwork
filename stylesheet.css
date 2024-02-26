@@ -157,7 +157,7 @@ label {
   position: relative;
   width: 100%;
   padding: 2vw 3vw;
-  overflow: hidden;
+  
 }
 .scroll-wrapper {
   overflow:hidden;
@@ -299,7 +299,7 @@ label {
   .nav {
     width: 100%;
     padding: 2vw 3vw;
-    overflow: hidden;
+    
   }
   .scroll-wrapper{
     overflow-x: auto;
