@@ -157,10 +157,10 @@ label {
   position: relative;
   width: 100%;
   padding: 2vw 3vw;
-  
+  overflow-x: hidden;
 }
 .scroll-wrapper {
-  overflow:hidden;
+  overflow-x: auto;
 }
 .slide-menu {
   display: flex;
