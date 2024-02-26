@@ -157,10 +157,12 @@ label {
   position: relative;
   width: 100%;
   padding: 2vw 3vw;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 .scroll-wrapper {
-  overflow-x: auto;
+  padding-bottom: 200px;
+  margin-bottom: -200px;
+  overflow: auto;
 }
 .slide-menu {
   display: flex;
@@ -170,7 +172,6 @@ label {
   min-height: 40px;
   position: relative;
   width: 100%;
-  
 }
 .slide-menu__button {
   list-style: none;
