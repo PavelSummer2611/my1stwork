@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+}
+@font-face {
+  font-family: "TT Lakes Bold";
+  src: url("TTLakes/TTLakes-Bold.eot");
+  src: local("TT Lakes Bold"), local("TTLakes-Bold"),
+    url("TTLakes/TTLakes-Bold.eot") format("embedded-opentype"),
+    url("TTLakes/TTLakes-Bold.woff") format("woff"),
+    url("TTLakes/TTLakes-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TT Lakes Regular";
+  src: url("TTLakes/TTLakes-Regular.eot");
+  src: local("TT Lakes Regular"), local("TTLakes-Regular"),
+    url("TTLakes/TTLakes-Regular.eot") format("embedded-opentype"),
+    url("TTLakes/TTLakes-Regular.woff") format("woff"),
+    url("TTLakes/TTLakes-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TT Lakes Medium";
+  src: url("TTLakes/TTLakes-Medium.eot");
+  src: local("TT Lakes Medium"), local("TTLakes-Medium"),
+    url("TTLakes/TTLakes-Medium.eot") format("embedded-opentype"),
+    url("TTLakes/TTLakes-Medium.woff") format("woff"),
+    url("TTLakes/TTLakes-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+.wrapper {
+  width: 320px;
+  box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2),
+    -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.header {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: 88px;
+  justify-content: space-between;
+  margin-bottom: 57px;
+  align-items: center;
+}
+.header-left {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.header-right {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.button {
+  border-style: none;
+  width: 40px;
+  height: 40px;
+}
+.button:hover {
+  opacity: 0.5;
+  transition-duration: 0.7s;
+}
+.burger-close__button {
+  background-image: url("img/ic_burger_close.svg");
+  margin-right: 17px;
+}
+
+.logo {
+  align-items: center;
+}
+.search__button {
+  background-image: url("img/ic_search.svg");
+}
+
+.menu__button {
+  margin-bottom: 32px;
+}
+.menu li {
+  list-style: none;
+}
+.menu li a {
+  font-family: "TT Lakes Regular";
+  text-decoration: none;
+  color: rgb(27, 28, 33);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  text-align: left;
+}
+.call__button {
+  background-image: url("img/ic_call.svg");
+}
+.chat__button {
+  background-image: url("img/ic_chat.svg");
+}
+.profile__button {
+  background-image: url("img/ic_profile.svg");
+}
+.menu__button a:hover {
+  color: rgb(126, 126, 130);
+  transition-duration: 0.7s;
+}
+.menu li:hover::before {
+  position:relative;
+display: block; 
+  width: 4px;
+  height: 32px;
+   left: -25px;
+  top: 0; 
+  background-color: rgb(65, 246, 215);
+  content: "";
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.wrapper-services-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer__buttons {
+  display: flex;
+  justify-content: start;
+  margin-bottom: 16px;
+}
+.footer__buttons__call,
+.footer__buttons__chat {
+  margin-right: 16px;
+}
+.mail {
+  color: rgb(27, 28, 33);
+  font-family: "TT Lakes Regular";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  text-align: left;
+  margin-bottom: 12px;
+}
+.phone {
+  color: rgb(27, 28, 33);
+  font-family: "TT Lakes Bold";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.6px;
+  text-align: left;
+  margin-bottom: 40px;
+}
+.language {
+  display: flex;
+  justify-content: start;
+  margin-left: 0;
+}
+.language__button {
+  margin-right: 7px;
+}
+.language li a {
+  font-family: "TT Lakes Regular";
+  text-decoration: none;
+  color: rgb(27, 28, 33);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  text-align: left;
+}
+.language li {
+  list-style: none;
+}
+.language__button a:hover {
+  color: rgb(126, 126, 130);
+  transition-duration: 0.7s;
+}
