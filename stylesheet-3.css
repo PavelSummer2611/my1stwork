@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+}
+@font-face {
+  font-family: "TT Lakes Bold";
+  src: url("TTLakes/TTLakes-Bold.eot");
+  src: local("TT Lakes Bold"), local("TTLakes-Bold"),
+    url("TTLakes/TTLakes-Bold.eot") format("embedded-opentype"),
+    url("TTLakes/TTLakes-Bold.woff") format("woff"),
+    url("TTLakes/TTLakes-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TT Lakes Regular";
+  src: url("TTLakes/TTLakes-Regular.eot");
+  src: local("TT Lakes Regular"), local("TTLakes-Regular"),
+    url("TTLakes/TTLakes-Regular.eot") format("embedded-opentype"),
+    url("TTLakes/TTLakes-Regular.woff") format("woff"),
+    url("TTLakes/TTLakes-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TT Lakes Medium";
+  src: url("TTLakes/TTLakes-Medium.eot");
+  src: local("TT Lakes Medium"), local("TTLakes-Medium"),
+    url("TTLakes/TTLakes-Medium.eot") format("embedded-opentype"),
+    url("TTLakes/TTLakes-Medium.woff") format("woff"),
+    url("TTLakes/TTLakes-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+.header {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: 56px;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 3px solid #D9FFF5;
+  background-color: #ffffff;
+}
+.repair-h1 {
+  color: rgb(27, 28, 33);
+  font-family: "TT Lakes Medium";
+  color: rgb(126, 126, 130);
+  font-size: 16px;
+  letter-spacing: -0.6px;
+  margin-left: 50px;
+  width: 100%;
+  background-color: inherit;
+}
+.brandsList {
+  padding: 25px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.brand {
+background-color: #ffffff;
+  margin: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 1px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  border: 1px solid #eaeaea;
+  border-radius: 6px;
+  width: 240px;
+  height: 72px;
+  align-items: center;
+}
+.go-button {
+  border-style: none;
+  width: 40px;
+  height: 40px;
+  background-color: inherit;
+  background-image: url(img/go.svg);
+  text-align: center;
+  margin: 16px;
+}
+.image {
+  margin: 16px;
+  background-color: inherit;
+}
+.expand {
+    margin-top: 20px;
+    margin-left: 40px;
+    display: flex;
+    justify-items: center;
+}
+.expand_button {
+    border-style: none;
+    font-family: "TT Lakes Regular";
+    font-size:16px;
+}
