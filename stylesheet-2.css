@@ -83,7 +83,7 @@
   margin-bottom: 32px;
   list-style: none;
 }
-.menu__button__link {
+.menu__link {
   font-family: "TT Lakes Regular";
   text-decoration: none;
   color: rgb(27, 28, 33);
@@ -102,7 +102,7 @@
 .profile__button {
   background-image: url("img/ic_profile.svg");
 }
-.menu__button__link:hover {
+.menu__link:hover {
   color: rgb(126, 126, 130);
   transition-duration: 0.7s;
 }
@@ -128,13 +128,13 @@
 .footer__buttons {
   display: flex;
   justify-content: start;
-  margin-bottom: 16px;
 }
 .footer__call,
 .footer__chat {
   margin-right: 16px;
 }
 .mail {
+  padding-top: 16px;
   color: rgb(27, 28, 33);
   font-family: "TT Lakes Regular";
   font-size: 16px;
@@ -142,9 +142,9 @@
   line-height: 24px;
   letter-spacing: -0.2px;
   text-align: left;
-  margin-bottom: 12px;
 }
 .phone {
+  padding-top: 12px;
   color: rgb(27, 28, 33);
   font-family: "TT Lakes Bold";
   font-size: 24px;
@@ -152,9 +152,9 @@
   line-height: 32px;
   letter-spacing: -0.6px;
   text-align: left;
-  margin-bottom: 40px;
 }
 .language {
+  padding-top: 40px;
   display: flex;
   justify-content: start;
   margin-left: 0;
@@ -163,7 +163,7 @@
   margin-right: 7px;
   list-style: none;
 }
-.language__button__link {
+.language__link {
   font-family: "TT Lakes Regular";
   text-decoration: none;
   color: rgb(27, 28, 33);
@@ -173,7 +173,7 @@
   letter-spacing: -0.2px;
   text-align: left;
 }
-.language__button__link:hover {
+.language__link:hover {
   color: rgb(126, 126, 130);
   transition-duration: 0.7s;
 }
