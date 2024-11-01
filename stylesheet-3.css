@@ -40,7 +40,7 @@
   height: 56px;
   justify-content: space-between;
   align-items: center;
-  border-top: 3px solid #D9FFF5;
+  border-top: 3px solid #d9fff5;
   background-color: #ffffff;
 }
 .repair-h1 {
@@ -53,14 +53,14 @@
   width: 100%;
   background-color: inherit;
 }
-.brandsList {
+.brand-list {
   padding: 25px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
-.brand {
-background-color: #ffffff;
+.brand-list-item {
+  background-color: #ffffff;
   margin: 20px;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -88,13 +88,27 @@ background-color: #ffffff;
   background-color: inherit;
 }
 .expand {
-    margin-top: 20px;
-    margin-left: 40px;
-    display: flex;
-    justify-items: center;
+  margin-top: 20px;
+  margin-left: 40px;
+  display: flex;
+  justify-items: center;
 }
-.expand_button {
-    border-style: none;
-    font-family: "TT Lakes Regular";
-    font-size:16px;
+.expand_button,
+.narrow_button {
+  border-style: none;
+  font-family: "TT Lakes Regular";
+  font-size: 16px;
+  cursor: grab;
+}
+.brand-show {
+  display: none;
+}
+.narrow {
+  display: none;
+  margin-top: 20px;
+  margin-left: 40px;
+  justify-items: center;
+}
+.expand-nodisplay {
+  display: none;
 }
