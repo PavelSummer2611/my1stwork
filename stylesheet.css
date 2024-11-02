@@ -300,14 +300,12 @@ label {
   .nav {
     width: 100%;
     padding: 2vw 3vw;
-    
   }
-  .scroll-wrapper{
+  .scroll-wrapper {
     overflow-x: auto;
   }
   .slide-menu {
     flex-wrap: nowrap;
-   
   }
   .content {
     flex-direction: row;

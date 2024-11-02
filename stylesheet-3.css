@@ -100,7 +100,7 @@
   font-size: 16px;
   cursor: grab;
 }
-.brand-show {
+.hidden {
   display: none;
 }
 .narrow {
@@ -112,3 +112,24 @@
 .expand-nodisplay {
   display: none;
 }
+@media (min-width: 1120px) {
+  .hidden:nth-child(7),
+  .hidden:nth-child(8) {
+    display: flex;
+  }
+}
+
+@media (max-width: 320px) {
+  .hidden {
+    display: flex;
+  }
+  .expand {
+    display: none;
+  }
+}
+
+/* @media (max-width: 768px) {
+  .hidden:nth-child(n + 1) {
+    display: flex;
+  }
+} */
