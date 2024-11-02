@@ -1,25 +1,96 @@
-const hiddenElements = document.querySelectorAll('.hidden');
+// const hiddenElements = document.querySelectorAll('.hidden');
+// const expandButton = document.querySelector('.expand_button');
+// const narrowButton = document.querySelector('.narrow_button');
+// const expand = document.querySelector('.expand')
+// const narrow = document.querySelector('.narrow')
+
+// expandButton.addEventListener('click', function () {
+//    hiddenElements.forEach(function(element) {
+//       element.style.display = 'flex';
+// });
+//    expand.style.display = 'none'
+//    narrow.style.display = 'flex'
+// })
+
+// narrowButton.addEventListener('click', function () {
+//    hiddenElements.forEach(function(element) {
+//       element.style.display = 'none';
+// });
+//    narrow.style.display = 'none'
+//    expand.style.display = 'flex'
+// })
+
+// -----------------------------------------------------------------------------
+
+
+// const buttons = document.querySelectorAll('.brand-list-item');
 const expandButton = document.querySelector('.expand_button');
 const narrowButton = document.querySelector('.narrow_button');
 const expand = document.querySelector('.expand')
 const narrow = document.querySelector('.narrow')
+const expandImg = document.querySelector('#expand-image')
+const narrowImg = document.querySelector('.narrow-image')
 
-expandButton.addEventListener('click', function () {
-   hiddenElements.forEach(function(element) {
-      element.style.display = 'flex';
-});
-   expand.style.display = 'none'
-   narrow.style.display = 'flex'
-})
 
-narrowButton.addEventListener('click', function () {
-   hiddenElements.forEach(function(element) {
-      element.style.display = 'none';
-});
-   narrow.style.display = 'none'
-   expand.style.display = 'flex'
-})
+const buttons = document.querySelectorAll('.brand-list-item');
+   //  const toggleButton = document.getElementById('toggleButton');
+   let displayCount = 6;
 
+    // Функция для обновления отображения кнопок
+   function updateButtons() {
+      for (var i = 0; i < buttons.length; i++) {
+         if (i < displayCount) {
+            buttons[i].style.display = 'flex';
+         } else {
+            buttons[i].style.display = 'none';
+         }
+      }
+    
+      // Меняем текст кнопки в зависимости от количества отображаемых кнопок
+      if (displayCount === 11) {
+        expandButton.textContent = 'Скрыть';
+            
+      } else {
+        expandButton.textContent = 'Показать все';
+      }
+    }
+
+    // Обработчик нажатия
+   expandButton.addEventListener('click', () => {
+      if (displayCount === 6) {
+         displayCount = 11;
+      } else if (displayCount === 11 && window.innerWidth < 768) {
+         displayCount = 6;
+      } else if (displayCount === 11 && window.innerWidth < 1120) {
+         displayCount = 8;
+      }
+      updateButtons()
+   });
+
+    // Слушатель на изменение размера окна
+   window.addEventListener('resize', () => {
+      if (window.innerWidth < 768 && displayCount === 11) {
+         displayCount = 6;
+         updateButtons();
+      }
+   });
+
+   window.addEventListener('resize', () => {
+      if (window.innerWidth < 1120 && displayCount === 11) {
+         displayCount = 8;
+         updateButtons();
+      }
+   });
+
+    // Изначальное отображение кнопок
+    updateButtons();
+
+
+
+// -------------------------------------------------------------
+
+
+  
 
 
 
@@ -50,6 +121,8 @@ narrowButton.addEventListener('click', function () {
 // });
 
 
+
+// ---------------------------------------------------------------------
 
 
 // document.addEventListener('DOMContentLoaded', function () {

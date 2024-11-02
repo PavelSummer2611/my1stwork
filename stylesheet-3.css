@@ -153,3 +153,10 @@
     display: none;
   }
 }
+#expand-image {
+  transition: transform 0.5s;
+}
+/* Класс для перевёрнутого состояния */
+.flipped {
+  transform: rotate(180deg);
+}
