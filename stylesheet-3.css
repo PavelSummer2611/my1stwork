@@ -49,7 +49,7 @@
   color: rgb(126, 126, 130);
   font-size: 16px;
   letter-spacing: -0.6px;
-  margin-left: 50px;
+  margin-left: 30px;
   width: 100%;
   background-color: inherit;
 }
@@ -120,6 +120,32 @@
 }
 
 @media (max-width: 320px) {
+  .brand-slider {
+    margin-left: -25px;
+    overflow-x: hidden;
+  }
+  .brand-list {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .brand-list-item {
+    background-color: #ffffff;
+    margin: 1px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 1px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    border: 1px solid #eaeaea;
+    border-radius: 6px;
+    max-width: 100%;
+    height: 72px;
+    align-items: center;
+    flex-shrink: 0.002; /*последний элемент не влазил*/
+  }
   .hidden {
     display: flex;
   }
@@ -127,9 +153,3 @@
     display: none;
   }
 }
-
-/* @media (max-width: 768px) {
-  .hidden:nth-child(n + 1) {
-    display: flex;
-  }
-} */
