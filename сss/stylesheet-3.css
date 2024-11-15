@@ -113,21 +113,19 @@
 .hidden {
   display: none;
 }
-.swiper {
-}
 @media (min-width: 1120px) {
   .hidden:nth-child(7),
   .hidden:nth-child(8) {
     display: flex;
   }
 }
-
 @media (max-width: 767px) {
   .brand-slider {
     margin-left: -25px;
     overflow-x: hidden;
   }
   .brand-list {
+    margin-bottom: 20px;
     padding: 10px;
     display: flex;
     flex-direction: row;

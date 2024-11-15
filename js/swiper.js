@@ -31,6 +31,3 @@ initSwiper();
 
 // Следим за изменением ширины окна и вызываем функцию
 window.addEventListener('resize', initSwiper);
-
-
-
