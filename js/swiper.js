@@ -5,7 +5,7 @@ function initSwiper() {
   if (window.matchMedia("(max-width: 767px)").matches) {
     // Если Swiper еще не инициализирован, создаем его
     if (!swiper) {
-      swiper = new Swiper('.swiper-container', {
+      swiper = new Swiper('.swiper', {
         centeredSlides: true,
         loop: false,
         pagination: {
@@ -31,3 +31,6 @@ initSwiper();
 
 // Следим за изменением ширины окна и вызываем функцию
 window.addEventListener('resize', initSwiper);
+
+
+

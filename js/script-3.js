@@ -1,12 +1,10 @@
-let items = document.querySelectorAll(".brand-list-item");
-let toggleButton = document.querySelector(".expand_button");
+const items = document.querySelectorAll(".brand-list-item");
+const toggleButton = document.querySelector(".expand_button");
 let displayCount = 6; // Начальное количество видимых элементов
-let expand = document.getElementById('expand-image')
-let narrow = document.getElementById('narrow-image')
 
 function updateItems() {
         // Показать нужное количество элементов
-   for (var i = 0; i < items.length; i++) {
+   for (let i = 0; i < items.length; i++) {
       if (window.innerWidth >= 1120 && displayCount === 6) {
          displayCount = 8;
       }
@@ -26,7 +24,7 @@ function updateItems() {
    }
       }
 
-toggleButton.onclick = function () {
+toggleButton.addEventListener('click', function () {
         // Если отображаем 6 или 8 элементов, переключаем на 11
    if (displayCount === 6 || displayCount === 8) {
    displayCount = 11;
@@ -38,7 +36,7 @@ toggleButton.onclick = function () {
    }
    
    updateItems();
-   };
+   });
 
       // Первоначальное отображение элементов
    updateItems();

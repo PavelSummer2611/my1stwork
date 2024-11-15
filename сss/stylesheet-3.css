@@ -79,7 +79,7 @@
   width: 40px;
   height: 40px;
   background-color: inherit;
-  background-image: url(img/go.svg);
+  background-image: url("../img/go.svg");
   text-align: center;
   margin: 16px;
 }
@@ -101,7 +101,7 @@
   position: relative;
 }
 .expand_button::before {
-  content: url(img/ic_expand.svg);
+  content: url("../img/ic_expand.svg");
   top: -2px;
   left: -23px;
   position: absolute;
@@ -112,6 +112,8 @@
 }
 .hidden {
   display: none;
+}
+.swiper {
 }
 @media (min-width: 1120px) {
   .hidden:nth-child(7),
