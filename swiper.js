@@ -1,15 +1,14 @@
 let swiper;
 
 function initSwiper() {
-  // Проверяем, если ширина экрана меньше или равна 320px
-  if (window.matchMedia("(max-width: 320px)").matches) {
+  // Проверяем, если ширина экрана меньше или равна 767px
+  if (window.matchMedia("(max-width: 767px)").matches) {
     // Если Swiper еще не инициализирован, создаем его
     if (!swiper) {
       swiper = new Swiper('.swiper-container', {
-         
-         centeredSlides: true,
-         loop: false,
-         pagination: {
+        centeredSlides: true,
+        loop: false,
+        pagination: {
             el: '.swiper-pagination',
             clickable: true,
         },
@@ -19,7 +18,7 @@ function initSwiper() {
       });
     }
   } else {
-    // Если ширина больше 320px и Swiper был инициализирован, уничтожаем его
+    // Если ширина больше 767px и Swiper был инициализирован, уничтожаем его
     if (swiper) {
       swiper.destroy(true, true);
       swiper = null;

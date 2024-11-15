@@ -19,12 +19,10 @@ function updateItems() {
         // Обновить текст кнопки
    if (displayCount === 11) {
       toggleButton.textContent = "Скрыть";
-      expand.style.display = 'none'
-      narrow.style.display = 'flex'
+      toggleButton.classList.add('rotate');
    } else {
       toggleButton.textContent = "Показать все";
-      expand.style.display = 'flex'
-      narrow.style.display = 'none'
+      toggleButton.classList.remove('rotate');
    }
       }
 
@@ -33,7 +31,7 @@ toggleButton.onclick = function () {
    if (displayCount === 6 || displayCount === 8) {
    displayCount = 11;
    } else if // Если отображаем все 11 элементов, вернём к 6 или 8
-   (displayCount === 11 && window.innerWidth <= 768) {
+   (displayCount === 11 && window.innerWidth >= 768) {
    displayCount = 6;
    } else if (displayCount === 11 && window.innerWidth >= 1120) {
    displayCount = 8;
